@@ -1,5 +1,4 @@
 /* 
-5SENG003W Algorithms – Coursework (2025/26)
 Checking acyclicity of directed graphs
 */
 
