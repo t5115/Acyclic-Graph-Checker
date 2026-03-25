@@ -41,9 +41,10 @@ The program:
 
 ---
 ## Input Format
-The input file (`input.txt`) should contain **directed edges**, one per line:
-1 2
-2 3
-3 1
-3 4
+The input file (`input.txt`) should contain **directed edges**, one per line (e.g):
+- 1 2
+- 2 3
+- 3 1
+- 3 4
+
 Meaning that there are edges from vertex 1 to vertex 2 etc.
