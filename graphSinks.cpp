@@ -4,9 +4,31 @@ Checking acyclicity of directed graphs
 */
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 // Task 2 - Data structure for representing direct graphs ()
+class Graph {
+    private:
+    int size; // number of nodes
+    vector<vector<int>> matrix; // adjacency matrix
+
+    public:
+    Graph(int n) {
+        size = n;
+        matrix.resize(n, vector<int>(n, 0));
+    }
+    
+    void print(){
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                cout<<matrix[i][j]<<" ";
+            };
+            cout<<endl;
+        };
+    };
+
+};
 
 // Task 3 - Parser that takes an input to generate a graph
 
@@ -16,5 +38,7 @@ using namespace std;
 
 // Program Start
 int main(){
-
+    cout<<endl;
+    Graph g(3);
+    g.print();
 }
